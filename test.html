@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tasd.css">
+    <link rel="icon" href="favicon (2).ico"/>
+    <title>Motivacio</title>
+</head>
+<body>
+    <img src="https://unsplash.it/1920/1080" id="asd" alt="">
+    <div id="szoveg">
+
+    </div>
+    <script>
+
+        var motivaciosIdezetek = [
+  "Az élet nem arról szól, hogy megvárd a vihart, hanem arról, hogy megtanuld táncolni az esőben.",
+  "A változás az egyetlen állandó dolog az életben. Ne félj tőle, hanem tanuld meg kihasználni az lehetőségeket, amit hoz magával.",
+  "Az álmok csak addig maradnak álmok, amíg nem válik őket célkitűzésekké, és nem teszel értük.",
+  "Mindenki elveszít néha, de csak azok a győztesek, akik soha nem adják fel.",
+  "Az időtöltés olyan, mint egy befektetés: arra kell használni, hogy növekedjen.",
+  "Az elutasítás csak egy útmutató az úton, hogy megtaláld az igazi utad.",
+  "A siker nem az, amit elértél, hanem az, amit leküzdöttél, hogy elérj oda.",
+  "Minden nap egy új lehetőség arra, hogy megváltoztasd az életedet.",
+  "Az életed csak olyan jó, mint amilyenek a gondolataid.",
+  "Nincs olyan késő, hogy megpróbálj valamit újra.",
+  "A legnagyobb akadály az önmagadhoz való hit hiánya.",
+  "A csúcs csak egy állomás az úton, ne hagyd abba az utazást, miután odaértél.",
+  "Az eredmények csak az erőfeszítések és az elszántság gyümölcsei.",
+  "A pozitív gondolkodás az első lépés a sikeres élet felé.",
+  "Az élet egy maraton, ne egy sprint.",
+  "A változás csak akkor jön, ha kilépsz a komfortzónádból.",
+  "A legnagyobb győzelem az önmagad legyőzése.",
+  "A hiba csak egy útmutató az úton a jobb megoldások felé.",
+  "A lehetetlen csak egy állomás az úton a lehető legjobb felé.",
+  "Az idő mindenkinek ugyanannyi, csak attól függ, hogy hogyan használod.",
+  "Az önbizalom az első lépés a siker felé.",
+  "A változás csak akkor jön, ha megváltoztatod a gondolkodásmódodat.",
+  "A kitartás az, ami különbséget tesz a jó és a nagyszerű között.",
+  "Az élet nem arról szól, hogy ki vagy, hanem arról, hogy mit teszel.",
+  "A szív csak akkor nyílik meg, ha mered az ismeretlenbe lépni.",
+  "A céljaid csak addig maradnak álmok, amíg nem teszel értük.",
+  "Az élet egyetlen szépsége az, hogy mindig van lehetőség változni.",
+  "A legjobb út a jövőbe az, hogy tanulsz a múltból, élvezd a jelenben és készülj a jövőre.",
+  "Az élet nem arról szól, hogy megvárjuk a vihart, hanem arról, hogy megtanuljunk táncolni az esőben.",
+  "A siker útja mindig a legkevésbé járt út.",
+  "A legnagyobb győzelmek mindig a legnagyobb kihívásokon keresztül jönnek.",
+  "A változás az egyetlen állandó dolog az életben, fogadd el és alkalmazkodj hozzá.",
+  "Az idő csak egy fogalom, amit úgy kell használnod, hogy az életedet jobbá tegye.",
+  "A legnagyobb lehetőség mindig ott van a legnagyobb kihívások mögött.",
+  "A siker nem arról szól, hogy megy minden simán, hanem hogy hogyan kezeled a nehézségeket.",
+  "Az életben minden választás hatással van a jövődre, válassz bölcsen.",
+  "A cél nem arról szól, hogy odaérj, hanem az úton való haladásról.",
+  "Az álmok csak olyan nagyok, mint amilyen nagyok a hited.",
+  "Az élet csak olyan nehéz, amilyennek gondolod.",
+  "Az élet arról szól, hogy mi történik veled, ha felébredsz a reggel, ne azzal, ami történt veled tegnap.",
+  "A lehetőségek csak akkor válnak valósággá, ha lépéseket teszel értük.",
+  "A siker titka az, hogy soha ne add fel.",
+  "A legnagyobb kalandok mindig a legnagyobb félelmekkel járnak.",
+  "Az élet egyik legnagyobb ajándéka az, hogy minden nap új lehetőségekkel teli.",
+  "Az élet olyan, mint egy könyv, és az, hogy milyen lesz, az attól függ, hogy milyen történeteket írsz bele.",
+  "A sikeres ember az, aki képes volt megtalálni az utat a kudarcból a sikerbe.",
+  "Az álmok csak akkor válnak valóra, ha felkelünk és dolgozunk értük.",
+  "Az életben a legfontosabb nem az, hogy milyen gyorsan mész, hanem az, hogy merre mész.",
+  "Az élet olyan, mint egy kerék, és ha megállítod, nem tudsz előre haladni.",
+  "Az élet egyetlen állandója a változás, tanulj alkalmazkodni hozzá.",
+  "Az élet arról szól, hogy olyan embereket találj, akik megnevettetnek, és akikkel megoszthatod az életedet.",
+  "Az élet csak olyan nehéz, amilyennek gondolod. Hagyd abba a negatív gondolkodást, és fogadd el a kihívásokat.",
+  "Az élet csak egy játék, tanuld meg élvezni, és minden pillanatát kiélvezni.",
+  "Az életben minden lehetséges, csak annak hiszel, hogy lehetséges.",
+  "Az élet egyetlen állandója a változás, ne félj tőle, hanem fogadd el és tanulj tőle.",
+  "Az élet olyan, mint egy tükör, ha mosolyogsz rá, visszamosolyog.",
+  "Az élet arról szól, hogy mered megtalálni a boldogságot a legkisebb dolgokban is.",
+  "Az élet egyetlen állandója a változás, fogadd el és alkalmazkodj hozzá.",
+  "Az élet egyetlen szabálya az, hogy nincs szabály.",
+  "Az életben az a legfontosabb, hogy minden nap tanulj valami újat.",
+  "Az élet egy kaland, és minden pillanatot meg kell ragadni.",
+  "Az élet arról szól, hogy merj nagyot álmodni, és még nagyobbat cselekedni.",
+  "Az élet arról szól, hogy merj kockáztatni és kilépni a komfortzónádból.",
+  "Az élet olyan, mint egy mozi, és te vagy a rendezője. Döntsd el, milyen lesz a történet.",
+  "Az életben nincs késő újrakezdeni, minden nap új lehetőség.",
+  "Az élet arról szól, hogy megtaláld az igaz szerelmet és boldogságot."
+]
+;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var randomIndex = Math.floor(Math.random() * motivaciosIdezetek.length);
+            var randomMotivaciosIdezet = motivaciosIdezetek[randomIndex];
+            document.getElementById("szoveg").innerText = randomMotivaciosIdezet;
+        });
+      </script>
+      <style>
+          body{
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    min-height: 100vh;
+}
+div{
+    background-color: rgba(0, 0, 0, 0.25    );
+    position: fixed;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: Cursive;
+    margin-inline: 50px;
+}
+#asd{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+    filter:brightness(50%);
+}
+      </style>
+</body>
+</html>
